@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.top_1_container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 9, 30, 0.7), rgba(0, 10, 34, 0.7)), url(campusbg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.top_2_container {
+    display: flex;
+}
+
+.image {
+    padding-top:3%;
+    padding-left:8%;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image p {
+    padding-left:1%;
+    font-size: 30px;
+    color: rgb(220, 231, 240);
+    letter-spacing: 2px;
+    padding-top: 1%;
+   
+}
+nav {
+    position: absolute;
+    left:48%;
+    top:72px; /* Adjust this value as needed */
+}
+.navlinks {
+    flex: 1;
+}
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+.navlinks ul li a {
+    color: rgb(220, 231, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-decoration: wavy;
+}
+.navlinks ul li a:hover {
+    color: rgba(118, 193, 255, 0.854);
+}
+.text-box {
+    color: rgb(220, 231, 240);
+    margin-top: 13%;
+    text-align: center;
+    font-size: larger;
+}
+.visit-btn
+{
+    background: transparent;
+    border:1px solid rgb(220, 231, 240) ;
+    padding:10px;
+    color:aliceblue;
+    text-decoration: none;
+}
+.visit-btn:hover
+{
+ border:1px solid rgb(237, 59, 0);
+ background-color:rgb(237, 59, 0);
+}
+@media (max-width: 700px) {
+    .image {
+        padding-left:30%;
+        padding-top:15%;
+        display:flex;
+    }
+    .image img {
+        height: 40px; /* Adjust this value as needed */
+    }
+    .image p {
+      
+       padding-left:2%;
+        font-size:20px;
+        color:rgb(220, 231, 240);
+        letter-spacing: 1px;
+    }
+    .text-box {
+        font-size: 10px;
+        margin-top:35%;
+    }
+    nav {
+        position: absolute;
+        left:1%;
+        top:13px;
+    }
+
+    .navlinks ul li {
+        display: inline-block;
+        font-size:9px;
+        padding-left:4px; /* Adjust this value as needed */
+    }
+}
+.mid_1_container {
+    background-color: white; 
+    font-family: Helvetica, Arial, sans-serif;
+    color:rgb(78, 78, 78);
+}
+.mid_2_container
+{
+  text-align: center;
+  font-size:x-large;
+  padding-top:5%;
+}
+.mid_3_container
+{
+    padding:30px 600px;
+    padding-bottom:1%;
+    display:flex;
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+   
+}
+.degree{
+    margin:2%;
+    flex-basis:40%;
+    background:rgb(238, 248, 255) ;
+    font-size:15px;
+    border-radius:10px; 
+    padding:1%;
+}
+.degree:hover{
+    box-shadow:5px 5px 10px 5px rgb(178, 178, 178);   
+}
+.degree p
+{ padding-top:2%;
+text-align:justify;
+}
+@media (max-width: 700px)
+ {
+    .mid_2_container h1 {
+        font-size: 30px;
+    }
+    .mid_3_container p {
+        position: relative; /* Changed to relative */
+        right:530px;
+        padding-right:10px;
+        margin-bottom: 10px; 
+    }
+    .row {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    .degree {
+        font-size: 10px;
+    }
+}
+.bottom_1_container {
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+  color:rgb(63, 63, 63);
+}
+.bottom_2_container {
+  text-align: center;
+  font-size: x-large;  
+  padding:30px;
+}
+.bottom_2_container p {
+    font-size:large;
+    padding-top:20px;
+}
+.row2
+{
+    display: flex;
+    justify-content:center;
+}
+.campus_view
+{    
+    padding-top:10px;
+    padding-left:10px;
+    margin-bottom: 20px;
+}
+.campus_view img:hover
+ {
+    box-shadow:0px 0px 15px 5px rgb(193, 193, 193);
+ } 
+ .row3
+ {
+    display:flex;
+
+ }
+ .campus_review
+ {
+    padding:50px;
+    text-align:center;
+    font-size:18px;  
+    padding-top:3%;
+    padding-left:6%;
+   flex-basis:30%;
+   background:rgb(231, 231, 255);
+ }
+ @media(max-width:700px)
+ {
+    .bottom_2_container {
+        text-align: center;
+        font-size:larger;  
+        padding:25px;
+      }
+      .bottom_2_container p {
+          padding-top:20px;
+          font-size:large;
+      }
+      .row2
+      {
+        flex-direction:column;
+        text-align: center;
+      }
+      .campus_view
+      {    
+          padding-top:10px;
+          margin-bottom: 20px;
+      }
+       .row3
+       {
+         flex-direction: column;
+       }
+       .campus_review p
+       {
+        padding-left:30px;
+       }
+ } 
+ .event_container
+ {
+    text-align: center;
+    padding:30px;
+    font-size:x-large;
+    font-family: 'Nunito', sans-serif;
+ }
+ .event{
+  padding:40px;
+ }
+ .event p{
+    padding-top:30px;
+    font-size:20px;
+ }
+ .img1{
+   display:flex;
+   padding-top:40px;
+   padding:30px;
+ }
+ .img1 p{
+    padding-top:3%;
+    padding-left:1%;
+    text-align: center;
+    font-size:19px;
+    flex-basis:100%;
+    background:rgb(231, 231, 255);
+ }
+ .img1 img:hover{
+    box-shadow:0px 0px 10px 1px;
+    background:rgb(211, 211, 211);
+ }
+ .img2{
+    display:flex;
+    padding:30px;
+  }
+  .img2 p{
+    padding-top:4%;
+    text-align: center;
+    font-size:19px;
+    padding-left:1%;
+    flex-basis:100%;
+    background:rgb(231, 231, 255);
+}
+.img2 img:hover{
+    box-shadow:0px 0px 10px 1px;
+    background:rgb(211, 211, 211);
+ }
+  .img3{
+    display:flex;
+    padding:30px;
+  }
+  .img3 p{
+    padding-top:3%;
+    padding-left:1%;
+    text-align: center;
+    font-size:19px;
+    flex-basis:100%;
+    background:rgb(231, 231, 255);
+
+ }
+ .img3 img:hover{
+    box-shadow:0px 0px 10px 1px;
+    background:rgb(211, 211, 211);
+ }
+ .img4 {
+    display: flex;
+    padding: 30px;
+    height: auto; /* Change 'auto' to a specific value based on your design */
+}
+
+.img4 p {
+    font-size: 19px;
+    padding:5% 1%;
+    flex-basis: 100%;
+    background: rgb(231, 231, 255);
+}
+
+.img4 img:hover {
+    box-shadow: 0px 0px 10px 1px;
+    background: rgb(211, 211, 211);
+}
+
+
+ @media(max-width:700px)
+ {
+    .event_container
+    {
+       padding:5px;
+       font-size:large;
+    }
+    .event p
+    {
+       font-size:17px;   
+    }
+    .img1{
+        padding:10px;
+        flex-direction: column;
+    }
+    .img1 p 
+    {
+        font-size:15px;
+        padding:20px;
+    }
+    .img2{
+        margin-top:20px;
+        padding:10px;
+        flex-direction: column;
+    }
+    .img2 p 
+    {    
+        padding:20px;
+        font-size:15px;
+    }
+    .img3{
+        margin-top:20px;
+        padding:10px;
+        flex-direction: column;
+    }
+    .img3 p 
+    {    
+        padding:20px;
+        font-size:15px;
+    }
+    .img4{
+        margin-top:20px;
+        padding:10px;
+        flex-direction: column;
+    }
+    .img4 p 
+    {    padding-top:30px;
+        padding:10px;
+        font-size:15px;
+    }
+ }
+ .arrow-sliding-btn img{
+    border-radius:50%;
+    background:rgb(231, 231, 255);
+    padding:10px;
+    position:fixed;
+    top:83%;
+    right:10px;
+    display:flex;
+    justify-content:right;
+   margin-top:50px;
+   box-shadow:1px 2px 1px 2px  rgb(208, 207, 207);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+  .end-section
+  {
+    font-family: 'Nunito', sans-serif;
+    width:100%;
+    height:40vh;
+    padding:50px;
+    background-position: center;
+   background-size:cover;
+   margin-bottom:3%;
+    background-image: linear-gradient(rgba(0, 9, 30, 0.7), rgba(0, 9, 30, 0.7)), url(tennis.jpg);
+  }
+  .end-section h3{
+       color:rgb(208, 208, 208);
+       text-align:center;
+       font-size: x-large;
+       margin-top:6%;
+       margin-bottom:3%;
+  }
+  .end-section a
+  { 
+    color:rgb(225, 225, 225);
+    border: 1px solid rgb(218, 218, 218);
+    background:transparent;
+    padding:10px 45px;
+    text-decoration:none;
+     margin-left:43%;
+     font-size: 20px;
+  }
+  .end-section a:hover 
+  {
+    border:1px solid rgb(237, 59, 0);
+    background-color:rgb(237, 59, 0);
+  }
+  .about
+  {
+    color:rgb(57, 57, 57);
+    text-align: center;
+    font-size:large;
+    margin-top:20px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .about p{
+     padding:20px;
+  }
+  .about a 
+  {
+    text-decoration:none;
+    color:black;
+  }
+  .social-media
+  {
+    text-align: center;
+    margin:10px 20px;
+  }
+  .social-media img
+  {
+    padding-left:20px;
+  }
+  .grad
+  {
+    text-align: center;
+    font-size: x-large;
+    margin-left:30px;
+  }
+  .grad p
+  {
+   padding:20px;
+  }
+  @media(max-width:700px)
+  {
+    .end-section
+    {
+        width:71.5%;
+        background-size: cover;
+    }
+    .end-section h3 
+    {
+        font-size: medium;
+        margin-top:25%;
+        margin-bottom:10%;
+    }
+    .end-section a
+    { 
+        padding-left:2px;
+      padding:5px 15px;
+       margin-left:24%;
+       font-size:15px;
+    }
+    .about p 
+    {
+        font-size:15px;
+    }
+  }

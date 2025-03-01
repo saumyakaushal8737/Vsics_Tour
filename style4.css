@@ -1,0 +1,216 @@
+.placements-img
+{
+    display:flex;
+    margin:30px;
+    text-align:center;
+    justify-content:center;
+}
+.placements-img img{
+    padding:40px;
+}
+.placements-img p
+{
+    font-family:"poppins";
+    font-size:20px;
+    font-weight:500;
+}
+span
+{
+    color:grey;
+}
+.placement-theory
+{
+    font-family:"poppins";
+    text-align: center;
+    margin:60px 20px;
+    border:1px solid rgb(214, 214, 255);
+    border-radius:50px;
+    background: rgb(247, 247, 252);
+}
+.placement-theory h1{
+    padding-top:10px;
+}
+.placement-theory p{
+    line-height: 1.8;
+    padding:20px;
+}
+.placements-achievement
+{ 
+    margin:50px;
+    text-align:center;
+    display: flex;
+    justify-content: space-around;  
+}
+.first-row-three-element a{
+    text-decoration:none;
+    color:orangered;
+    border:1px solid orangered;
+    background:rgb(255, 254, 254);
+    margin:10px 30px;
+    line-height:5;
+    font-size: larger;
+    padding:20px 40px;
+    transition:all 0.5s ease-out;
+}
+.first-row-three-element a:hover{
+    background:orangered;
+    color:white;
+}
+#r1 a
+{
+   padding:20px 140px;
+}
+#r2e1{
+    padding:20px 140px;
+}
+#r3e2
+{
+    padding:20px 80px; 
+}
+.image-krish
+{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 120px;
+}
+.image-krish-img
+{
+    display:flex;
+    background: rgb(247, 247, 252);
+    border:1px solid rgb(227, 227, 255);
+    font-family: "poppins";
+    padding:20px 20px 10px 20px;
+    margin:20px;
+    width:60%;
+    border-radius:20px;
+}
+.image-krish-img img,p{
+    padding:20px 10px;
+    font-weight:500;
+}
+.slider {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 12); /* Adjust width based on number of slides */
+    animation: scroll 60s linear infinite;
+}
+
+.slide {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.slide img:hover{
+    transform:scale(1.1);
+}
+
+.slide p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.placement-gallery h2{
+margin:20px;
+text-align:center;
+font-family:"poppins";
+}
+/*Responsive*/
+@media(max-width:780px)
+{
+    .placements-img
+{
+    flex-direction: column;
+    margin:10px;
+}
+.placements-img img{
+    padding:20px;
+}
+#img1
+{
+    height:160px;
+}
+#img2
+{
+    height:200px;
+}
+.placements-achievement
+{ 
+  flex-direction: column;
+}
+#r1 a
+{
+    padding: 20px 100px !important;  
+}
+#r2e1
+{
+    padding: 20px 100px !important;
+}
+#r3e2
+{
+    padding:20px 50px !important;
+}
+.first-row-three-element a {
+    font-size: 12px;  /* Chhota font size */
+    width: auto; /* Content ke according size adjust ho */
+    text-align: center;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+#r2a {  /* Jo buttons abhi bhi bade hain unko target karne ke liye */
+    font-size: 12px !important;  
+    padding: 0px 40px !important;  
+    min-width: fit-content !important;  
+    display: inline-block !important;
+}/* yha se change kiya h hmne prashant ke liye*/
+.placement-theory
+{
+    width:82%;
+}
+.image-krish
+{
+    flex-direction: column;
+    margin:5px;
+    align-items:center;
+}
+.image-krish-img
+{
+    flex-direction: column;
+    width:65%;
+}
+.image-krish-img img,p{
+    font-size:14px;
+    font-weight:500;
+}
+.slider {
+    width:60%;
+    margin: auto;
+}
+.slide {
+    width: 220px;
+}
+.arrow-sliding-btn
+{
+    right:100px;
+    position:fixed;
+}
+}

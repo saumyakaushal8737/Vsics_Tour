@@ -1,0 +1,41 @@
+.infrastructure
+{
+    display:flex;
+    font-family:"poppins";
+    background:whitesmoke;
+    margin:50px;
+    height:300px;
+}
+.infrastructure:hover{
+    border: 1px solid rgb(178, 178, 252);
+}
+.infrastructure img
+{
+    padding-right:30px;
+}
+.content
+{
+    margin:50px;
+    line-height:2;
+}
+@media (max-width: 768px) {
+    .infrastructure {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto;
+        margin: 20px;
+        padding: 15px;
+        
+    }
+
+    .infrastructure img {
+        width: 100%; /* Full width */
+        padding-right: 0;
+        margin-bottom: 15px; /* Space below image */
+    }
+
+    .content {
+        margin: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
